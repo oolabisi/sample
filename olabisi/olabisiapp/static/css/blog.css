@@ -1,0 +1,32 @@
+h1,
+h2 a {
+  text-align: center;
+  font-family: "McLaren", cursive;
+}
+body {
+  padding: 20px 20px 20px 40px;
+}
+.page-header {
+  background-color: cadetblue;
+  margin-top: 0;
+  padding: 20px 20px 20px 50px;
+}
+.content {
+  margin-left: 40px;
+}
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.date {
+  color: aquamarine;
+}
+.post-form textarea,
+.post-form input {
+  width: 100%;
+}
+.post {
+  margin-bottom: 50px;
+}
+.post h3 a:visited {
+  color: cadetblue;
+}

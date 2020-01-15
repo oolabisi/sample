@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+  <head>
+    <title>Joe Blogg</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=McLaren|ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-theme.css"
+    />
+  </head>
+  <body>
+    <div class="page-header">
+      <a href="{% url 'post_new'%}" class="top menu"
+        ><span class="glyphicon glyphicon-plus"></span
+      ></a>
+    </div>
+    <div>
+      <h1><a href="/">Joe Blogg</a></h1>
+    </div>
+    <div>
+      <img src="{% static 'images/bridge.jfif' %}" alt="Lekki Bridge" />
+    </div>
+    {% block content %} {% endblock %}
+  </body>
+</html>
